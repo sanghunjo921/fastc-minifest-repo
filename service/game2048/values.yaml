@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 appName: "game2048"
-replicaCount: 3
+replicaCount: 2
 image:
   repository: 076817808708.dkr.ecr.ap-northeast-2.amazonaws.com/fastc-app
   pullPolicy: IfNotPresent
@@ -50,7 +50,7 @@ resources:
     memory: 128Mi
 autoscaling:
   enabled: true
-  minReplicas: 3
+  minReplicas: 2
   maxReplicas: 10
   targetCPUUtilizationPercentage: 20
   # targetMemoryUtilizationPercentage: 80
